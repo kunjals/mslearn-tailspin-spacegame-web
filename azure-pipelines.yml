@@ -1,6 +1,6 @@
 trigger:
   - '*'
-  
+
   pool:
     vmImage: 'ubuntu-16.04'
     demands:
@@ -57,4 +57,3 @@ trigger:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
     condition: succeeded()
-    
